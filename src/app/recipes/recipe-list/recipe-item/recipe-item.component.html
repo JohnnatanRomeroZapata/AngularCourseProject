@@ -1,0 +1,15 @@
+<a href="#" class="list-group-item" (click)="onRecipeSelected()">
+    <div class="row align-items-center">
+        <div class="col-8">
+            <div>
+                <h4 class="list-group-item-heading">{{ rec.name }}</h4>
+                <p class="list-group-item-text">{{ rec.description }}</p>
+            </div>
+        </div>
+        <div class="col-4 d-flex justify-content-end">
+            <span>
+                <img [src]="rec.imagePath" alt="{{ rec.name }}" class="rounded img-fluid" style="max-height: 100px;">
+            </span>
+        </div>
+    </div>
+</a>
